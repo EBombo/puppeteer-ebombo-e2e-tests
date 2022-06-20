@@ -49,6 +49,7 @@ async function enterLobbyFlow (_s, url) {
   // await _s.page.screenshot({ path: `first_time_inside_lobby_${userId}.png` });
 };
 
+// Main function.
 (async () => {
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
 
@@ -62,6 +63,7 @@ async function enterLobbyFlow (_s, url) {
 
   console.log("End of flow.");
 
+  // PlayTriviaDummyBehaviorFlow is a flow where users does not answer in a trivia game.
   // await playTriviaDummyBehaviorFlow(_s);
 
   await page.close();
@@ -71,7 +73,7 @@ async function enterLobbyFlow (_s, url) {
   .then(process.exit);
 
 
-// References
+// References.
 // https://stackoverflow.com/questions/57602530/puppeteer-load-testing-using-puppeteer
 // https://github.com/thomasdondorf/puppeteer-cluster
 // https://stackoverflow.com/questions/51971760/managing-puppeteer-for-memory-and-performance
