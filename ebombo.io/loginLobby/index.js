@@ -1,11 +1,6 @@
 const {timeoutPromise} = require("../../utils");
 
-const enterLobbyFlow = async (page, url, PIN_CODE, NICKNAME) => {
-
-    // Load page.
-    await page.goto(url, {waitUntil: "networkidle2"});
-    console.log("Page loaded");
-
+const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
     // Set pin.
     await page.type('.test-pin', PIN_CODE);
 

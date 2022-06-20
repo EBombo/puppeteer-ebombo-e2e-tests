@@ -17,8 +17,12 @@ const NICKNAME = faker.internet.email();
 
     const page = await browser.newPage();
 
+    // Load page.
+    await page.goto(URL, {waitUntil: "networkidle2"});
+    console.log("Page loaded");
+
     // Login to lobby.
-    const user = await enterLobbyFlow(page, URL, PIN_CODE, NICKNAME);
+    const user = await enterLobbyFlow(page, PIN_CODE, NICKNAME);
 
     // TODO: Use the value of the *user* to define the game env.
     /** Bingo, Roulette, Trivia **/
