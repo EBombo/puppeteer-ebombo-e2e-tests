@@ -26,7 +26,7 @@ const NICKNAME = faker.internet.email();
 
     console.log("user", user)
 
-    // TODO: Use the value of the *user* to define the game env.
+    // TODO: Use the value of the *user.lobby* to define the game env.
     /** Bingo, Roulette, Trivia **/
 
     // TODO: Pay game.
