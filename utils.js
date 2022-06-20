@@ -1,6 +1,8 @@
 const FIVE_MINUTES = 5 * 60 * 1_000;
 const TEN_MINUTES = 10 * 60 * 1_000;
 
+const timeoutPromise = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 class SelectorHelper {
 
   constructor(page) {
@@ -9,7 +11,7 @@ class SelectorHelper {
 
   async findElementByFullXPath(fullXPath) {
 
-    if (!this.page) throw new Error("No page setted on this helper"); 
+    if (!this.page) throw new Error("No page setted on this helper");
 
     const matchedElements = await this.page.$x(fullXPath);
 
@@ -46,6 +48,7 @@ async function playTriviaDummyBehaviorFlow (_s) {
 
 module.exports = {
   SelectorHelper,
+  timeoutPromise,
   waitUntilLobbyCloses,
   playTriviaDummyBehaviorFlow,
   FIVE_MINUTES,
