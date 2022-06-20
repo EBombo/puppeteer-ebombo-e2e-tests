@@ -43,7 +43,9 @@ const NICKNAME = faker.internet.email();
 })();
 
 
-// References.
+// References:
+// https://github.com/puppeteer/puppeteer/blob/v14.4.1/docs/api.md [documentation]
+
 // https://stackoverflow.com/questions/57602530/puppeteer-load-testing-using-puppeteer
 // https://github.com/thomasdondorf/puppeteer-cluster
 // https://stackoverflow.com/questions/51971760/managing-puppeteer-for-memory-and-performance
