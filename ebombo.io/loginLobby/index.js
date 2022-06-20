@@ -31,7 +31,7 @@ const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
 
     /** Screenshot of the logged user. **/
     console.log("userId", user.id);
-    await timeoutPromise(10000)
+    await timeoutPromise(10000);
     await page.screenshot({path: `first_time_inside_lobby_${user.id}.png`});
 
     return user;

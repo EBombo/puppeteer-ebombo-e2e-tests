@@ -24,11 +24,13 @@ const NICKNAME = faker.internet.email();
     // Login to lobby.
     const user = await enterLobbyFlow(page, PIN_CODE, NICKNAME);
 
+    console.log("user", user)
+
     // TODO: Use the value of the *user* to define the game env.
     /** Bingo, Roulette, Trivia **/
 
     // TODO: Pay game.
-    //TODO await playerAnsweringQuestionsFlow(page);
+    // TODO: await playerAnsweringQuestionsFlow(page);
     // await waitUntilLobbyCloses(_s);
 
 
