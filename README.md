@@ -4,13 +4,13 @@
 
 [https://shell.cloud.google.com/](https://shell.cloud.google.com/)
 
-## EN EL TERMINAL CLONAR EL REPOSITORIO [1 sola vez]:
+## (1ra vez) EN EL TERMINAL CLONAR EL REPOSITORIO [1 sola vez]:
 git clone https://github.com/EBombo/puppeteer-ebombo-e2e-tests.git
 
 ## EJECUTAR:
-### 1ra vez :
+### (1ra vez) :
 cd puppeteer-ebombo-e2e-tests && npm install
-### 2da vez en adelante
+### 2da vez en adelante:
 cd puppeteer-ebombo-e2e-tests
 
 ## EJECUTAR: 
