@@ -14,7 +14,7 @@ test_*.js files are tests to try different features of puppeteer.
 # COMO EJECUTAR BOTS
 
 # Abrir cloud shell
-[shell.cloud.google.com](shell.cloud.google.com)
+[https://shell.cloud.google.com/](https://shell.cloud.google.com/)
 
 # En el terminar clonar el repositorio [1 sola vez]
 git clone https://github.com/EBombo/puppeteer-ebombo-e2e-tests.git
