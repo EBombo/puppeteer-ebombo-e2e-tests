@@ -7,20 +7,22 @@ const triviaFlow = async (page, user) => {
     let isPlaying = false
 
     do {
-        /** Loop. **/
-        /** Select one answer. **/
-        console.log("get options to select");
+
+        /** Select an answer. **/
+        console.log("Get options to select");
         const [q1, q2, q3, q4, input1, btn1] = await getComponents(page);
         await page.screenshot({path: `first_time_inside_lobby_${user.id}.png`});
 
-        console.log("Select | write answer.");
-        await selectAnswerRandom(q1, q2, q3, q4, input1, btn1);
+        /** Select | write answer. **/
+        console.log("Select | write answer");
+        await selectRandomAnswer(q1, q2, q3, q4, input1, btn1);
 
         /** Waiting to continue playing. **/
-        console.log("Waiting to start playing");
+        console.log("Waiting to continue playing");
         await page.waitForSelector(".test-question-for-trivia", {timeout: 60000});
 
-        console.log("Validate there are questions");
+        /** Validate if there are questions. **/
+        console.log("Validate if there are questions");
         const [isQ1, isQ2, isQ3, isQ4, isInput1, isBtn1] = await getComponents(page)
         isPlaying = isQ1 || isQ2 || isQ3 || isQ4 || isInput1 || isBtn1;
 
@@ -42,7 +44,7 @@ const getComponents = async (page) => {
     return [q1, q2, q3, q4, input1, btn1];
 };
 
-const selectAnswerRandom = async (q1, q2, q3, q4, input1, btn1) => {
+const selectRandomAnswer = async (q1, q2, q3, q4, input1, btn1) => {
     if (q4?.click) {
         // Random for 4 question.
         const random = Math.floor(Math.random() * 4) + 1;
