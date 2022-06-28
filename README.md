@@ -8,7 +8,7 @@
 git clone https://github.com/EBombo/puppeteer-ebombo-e2e-tests.git
 
 ## EJECUTAR:
-cd puppeteer-ebombo-e2e-tests
+cd puppeteer-ebombo-e2e-tests && npm install
 
 ## EJECUTAR: 
 * PIN=XXXXXX npm run test
