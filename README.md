@@ -38,3 +38,14 @@ cd puppeteer-ebombo-e2e-tests
 * test-2000 
 * test-3000 
 * test-4000 
+
+
+
+
+
+
+
+
+### References:
+https://www.npmjs.com/package/puppeteer
+https://github.com/puppeteer/puppeteer/blob/v14.4.1/docs/api.md#pagewaitforselectorselector-options
