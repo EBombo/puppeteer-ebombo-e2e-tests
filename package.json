@@ -5,7 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "concurrent-test": "puppeteer-loadtest --file=index.js -s 1 -c 30"
+    "test-5": "puppeteer-loadtest --s=1 --c=5 --file=index.js",
+    "test-30": "puppeteer-loadtest --s=1 --c=30 --file=index.js",
+    "test-60": "puppeteer-loadtest --s=1 --c=60 --file=index.js",
+    "test-100": "puppeteer-loadtest --s=1 --c=100 --file=index.js",
+    "test-300": "puppeteer-loadtest --s=1 --c=300 --file=index.js",
+    "test-800": "puppeteer-loadtest --s=1 --c=800 --file=index.js",
+    "test-1200": "puppeteer-loadtest --s=1 --c=1200 --file=index.js",
+    "test-2000": "puppeteer-loadtest --s=1 --c=2000 --file=index.js",
+    "test-3000": "puppeteer-loadtest --s=1 --c=3000 --file=index.js",
+    "test-4000": "puppeteer-loadtest --s=1 --c=4000 --file=index.js"
   },
   "author": "",
   "license": "ISC",

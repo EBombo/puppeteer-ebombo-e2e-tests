@@ -8,11 +8,13 @@ const developmentUrl = "https://red.ebombo.io"
 const productionUrl = "https://ebombo.io"
 
 const URL = developmentUrl;
-const PIN_CODE = "546140";
+const PIN_CODE = process.env.PIN ?? "123456";
 const NICKNAME = faker.internet.email();
 
 // Main function.
 (async () => {
+    console.log("process.env.PIN", process.env.PIN)
+
     // Lunch browser.
     const browser = await puppeteer.launch({headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox']});
 

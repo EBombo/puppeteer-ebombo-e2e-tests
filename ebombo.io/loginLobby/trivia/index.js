@@ -63,7 +63,7 @@ const selectAnswerRandom = async (q1, q2, q3, q4, input1, btn1) => {
     }
 
     // Write answer.
-    await input1.type('.test-input-1', "PIN_CODE");
+    await input1.type(`ESTO ES UNA RESPUESTA RANDOM ${Math.floor(Math.random() * 100) + 1}`);
     await btn1.click();
 };
 
