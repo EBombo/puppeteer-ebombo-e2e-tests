@@ -30,15 +30,10 @@ const NICKNAME = faker.internet.email();
     // TODO: Use the value of the *user.lobby* to define the game env.
     /** Bingo, Roulette, Trivia **/
 
-    // TODO: Pay game.
+    // TODO: Paying game.
     await triviaFlow(page, user)
-    console.log("End");
-    // TODO: await playerAnsweringQuestionsFlow(page);
-    // await waitUntilLobbyCloses(_s);
 
-
-    // PlayTriviaDummyBehaviorFlow is a flow where users does not answer in a trivia game.
-    // await playTriviaDummyBehaviorFlow(_s);
+    // TODO: Answer feedback.
 
     console.log("End of flow.");
     //await page.close();
