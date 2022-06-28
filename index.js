@@ -7,7 +7,7 @@ const localUrl = "http://localhost:3001"
 const developmentUrl = "https://red.ebombo.io"
 const productionUrl = "https://ebombo.io"
 
-const URL = developmentUrl;
+const URL = process.env.ENV === "prod" ? productionUrl : developmentUrl;
 const PIN_CODE = process.env.PIN ?? "123456";
 const NICKNAME = faker.internet.email();
 
