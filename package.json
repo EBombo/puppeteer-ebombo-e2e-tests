@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node index.js",
     "test-5": "puppeteer-loadtest --s=1 --c=5 --file=index.js",
+    "test-10": "puppeteer-loadtest --s=1 --c=10 --file=index.js",
     "test-30": "puppeteer-loadtest --s=1 --c=30 --file=index.js",
     "test-60": "puppeteer-loadtest --s=1 --c=60 --file=index.js",
     "test-100": "puppeteer-loadtest --s=1 --c=100 --file=index.js",
