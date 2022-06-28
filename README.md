@@ -5,13 +5,15 @@
 [https://shell.cloud.google.com/](https://shell.cloud.google.com/)
 
 ## (1ra vez) EN EL TERMINAL CLONAR EL REPOSITORIO [1 sola vez]:
-git clone https://github.com/EBombo/puppeteer-ebombo-e2e-tests.git
+``` git clone https://github.com/EBombo/puppeteer-ebombo-e2e-tests.git ```
 
 ## EJECUTAR:
 ### (1ra vez) :
-cd puppeteer-ebombo-e2e-tests && npm install
+``` cd puppeteer-ebombo-e2e-tests && npm install ```
 ### 2da vez en adelante:
-cd puppeteer-ebombo-e2e-tests
+``` wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ```
+``` sudo apt install ./google-chrome-stable_current_amd64.deb ```
+``` cd puppeteer-ebombo-e2e-tests ```
 
 ## EJECUTAR: 
 * PIN=XXXXXX npm run test
