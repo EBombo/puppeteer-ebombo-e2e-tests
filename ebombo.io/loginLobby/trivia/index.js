@@ -18,7 +18,7 @@ const triviaFlow = async (page, user) => {
 
         /** Waiting to continue playing. **/
         console.log("Waiting to start playing");
-        await page.waitForSelector(".test-question-for-trivia", {timeout: 0});
+        await page.waitForSelector(".test-question-for-trivia", {timeout: 60000});
 
         console.log("Validate there are questions");
         const [isQ1, isQ2, isQ3, isQ4, isInput1, isBtn1] = await getComponents(page)

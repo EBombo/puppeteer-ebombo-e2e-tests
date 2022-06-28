@@ -33,7 +33,7 @@ const NICKNAME = faker.internet.email();
     // TODO: Use the value of the *user.lobby* to define the game env.
     /** Bingo, Roulette, Trivia **/
 
-    // TODO: Paying game.
+    // Paying game.
     await triviaFlow(page, user)
 
     // TODO: Answer feedback.
