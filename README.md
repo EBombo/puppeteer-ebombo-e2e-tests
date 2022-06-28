@@ -47,5 +47,5 @@ cd puppeteer-ebombo-e2e-tests
 
 
 ### References:
-https://www.npmjs.com/package/puppeteer
+https://www.npmjs.com/package/puppeteer-loadtest
 https://github.com/puppeteer/puppeteer/blob/v14.4.1/docs/api.md#pagewaitforselectorselector-options
