@@ -1,5 +1,3 @@
-const {timeoutPromise} = require("../../utils");
-
 const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
     // Set pin.
     await page.type('.test-pin', PIN_CODE);
@@ -10,7 +8,7 @@ const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
 
     /** Waiting for the next step. **/
     console.log("Pin validation");
-    await page.waitForSelector(".test-nickname")
+    await page.waitForSelector(".test-nickname");
 
     // Set nickname.
     await page.type('.test-nickname', NICKNAME);
@@ -31,7 +29,6 @@ const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
 
     /** Screenshot of the logged user. **/
     console.log("userId", user.id);
-    await timeoutPromise(10000);
     await page.screenshot({path: `first_time_inside_lobby_${user.id}.png`});
 
     return user;

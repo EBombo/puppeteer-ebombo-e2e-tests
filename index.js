@@ -1,13 +1,14 @@
 const puppeteer = require('puppeteer');
 const {faker} = require('@faker-js/faker');
 const {enterLobbyFlow} = require("./ebombo.io/loginLobby");
+const {triviaFlow} = require("./ebombo.io/loginLobby/trivia");
 
 const localUrl = "http://localhost:3001"
 const developmentUrl = "https://red.ebombo.io"
 const productionUrl = "https://ebombo.io"
 
-const URL = localUrl;
-const PIN_CODE = "660467";
+const URL = developmentUrl;
+const PIN_CODE = "546140";
 const NICKNAME = faker.internet.email();
 
 // Main function.
@@ -30,6 +31,8 @@ const NICKNAME = faker.internet.email();
     /** Bingo, Roulette, Trivia **/
 
     // TODO: Pay game.
+    await triviaFlow(page, user)
+    console.log("End");
     // TODO: await playerAnsweringQuestionsFlow(page);
     // await waitUntilLobbyCloses(_s);
 
