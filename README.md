@@ -29,6 +29,7 @@ cd puppeteer-ebombo-e2e-tests
 
 # Bots: 
 * test-5
+* test-10
 * test-30
 * test-60 
 * test-100 
