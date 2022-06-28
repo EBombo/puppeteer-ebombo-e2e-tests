@@ -14,6 +14,7 @@ const NICKNAME = faker.internet.email();
 // Main function.
 (async () => {
     console.log("process.env.PIN", process.env.PIN)
+    console.log("process.env.ENV", process.env.ENV)
 
     // Lunch browser.
     const browser = await puppeteer.launch({headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox']});
