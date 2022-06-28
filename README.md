@@ -8,9 +8,9 @@
 git clone https://github.com/EBombo/puppeteer-ebombo-e2e-tests.git
 
 ## EJECUTAR:
-1ra vez :
+### 1ra vez :
 cd puppeteer-ebombo-e2e-tests && npm install
-2da vez en adelante
+### 2da vez en adelante
 cd puppeteer-ebombo-e2e-tests
 
 ## EJECUTAR: 
