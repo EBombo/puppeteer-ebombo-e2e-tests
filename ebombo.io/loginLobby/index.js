@@ -8,7 +8,7 @@ const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
 
     /** Waiting for the next step. **/
     console.log("Pin validation");
-    await page.waitForSelector(".test-nickname");
+    await page.waitForSelector(".test-nickname", {timeout: 0});
 
     // Set nickname.
     await page.type('.test-nickname', NICKNAME);
@@ -19,7 +19,7 @@ const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
 
     /** Waiting for the next step. **/
     console.log("Nickname validation");
-    await page.waitForSelector('.notification-joint-user');
+    await page.waitForSelector('.notification-joint-user', {timeout: 0});
 
     /** Get user id. **/
     const user = await page.evaluate(() => {
