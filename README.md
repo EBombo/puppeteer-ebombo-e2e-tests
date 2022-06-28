@@ -49,47 +49,47 @@ PIN=XXXXXX ENV=prod npm run test-5
 
 # Bots: 
 ```sh
-test-5
+PIN= npm run test-5
 ```
 
 ```sh
-test-10
+PIN= npm run test-10
 ```
 
 ```sh
-test-30
+PIN= npm run test-30
 ```
 
 ```sh
-test-60
+PIN= npm run test-60
 ```
 
 ```sh
-test-100
+PIN= npm run test-100
 ```
 
 ```sh
-test-300
+PIN= npm run test-300
 ```
 
 ```sh
-test-800
+PIN= npm run test-800
 ```
 
 ```sh
-test-1200
+PIN= npm run test-1200
 ```
 
 ```sh
-test-2000
+PIN= npm run test-2000
 ```
 
 ```sh
-test-3000
+PIN= npm run test-3000
 ```
 
 ```sh
-test-4000
+PIN= npm run test-4000
 ``` 
 
 
