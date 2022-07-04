@@ -15,7 +15,7 @@ git clone https://github.com/EBombo/puppeteer-ebombo-e2e-tests.git
 cd puppeteer-ebombo-e2e-tests && npm install
 ```
 
-### 2da vez en adelante:
+### 2da vez en adelante [cloud shell]:
 ```sh
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 ```
@@ -24,6 +24,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
+### 2da vez en adelante [compute engine]:
 ```sh
 cd puppeteer-ebombo-e2e-tests
 ```
