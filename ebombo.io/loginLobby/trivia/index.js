@@ -2,7 +2,7 @@ const triviaFlow = async (page, user) => {
 
     /** Waiting to start playing. **/
     console.log("Waiting to start playing");
-    await page.waitForSelector(".test-question-for-trivia", {timeout: 0});
+    await page.waitForSelector(".test-question-for-trivia", { timeout: 0 });
 
     let isPlaying = false
 
@@ -11,7 +11,7 @@ const triviaFlow = async (page, user) => {
         /** Select an answer. **/
         console.log("Get options to select");
         const [q1, q2, q3, q4, input1, btn1] = await getComponents(page);
-        await page.screenshot({path: `first_time_inside_lobby_${user.id}.png`});
+        //await page.screenshot({path: `first_time_inside_lobby_${user.id}.png`});
 
         /** Select | write answer. **/
         console.log("Select | write answer");
@@ -19,7 +19,7 @@ const triviaFlow = async (page, user) => {
 
         /** Waiting to continue playing. **/
         console.log("Waiting to continue playing");
-        await page.waitForSelector(".test-question-for-trivia", {timeout: 60000});
+        await page.waitForSelector(".test-question-for-trivia", { timeout: 60000 });
 
         /** Validate if there are questions. **/
         console.log("Validate if there are questions");
@@ -69,4 +69,4 @@ const selectRandomAnswer = async (q1, q2, q3, q4, input1, btn1) => {
     await btn1.click();
 };
 
-module.exports = {triviaFlow}
+module.exports = { triviaFlow }

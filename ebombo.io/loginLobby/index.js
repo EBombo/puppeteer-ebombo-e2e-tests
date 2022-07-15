@@ -29,7 +29,7 @@ const enterLobbyFlow = async (page, PIN_CODE, NICKNAME) => {
 
     /** Screenshot of the logged user. **/
     console.log("userId", user.id);
-    await page.screenshot({path: `first_time_inside_lobby_${user.id}.png`});
+    //await page.screenshot({path: `first_time_inside_lobby_${user.id}.png`});
 
     return user;
 };
